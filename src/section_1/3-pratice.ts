@@ -1,6 +1,6 @@
 import { Equal, Expect } from "..";
 
-export async function fetchServerVersion() {
+export async function fetchServerVersion(): Promise<number>{
   const response = await fetch("https://api.example.com/v");
   const data = await response.json();
   return data;
